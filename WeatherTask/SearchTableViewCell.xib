@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="SearchTableViewCell" customModule="WeatherTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iuV-of-Atn">
+                        <rect key="frame" x="0.0" y="5" width="299" height="45"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RT-oK-ixa">
+                        <rect key="frame" x="309" y="5" width="100" height="45"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Xbg-k2-dBp"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                        <connections>
+                            <action selector="actionOnSubmitButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3PT-tu-WAr"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6RT-oK-ixa" firstAttribute="height" secondItem="iuV-of-Atn" secondAttribute="height" id="3aT-zd-c4Y"/>
+                    <constraint firstAttribute="bottom" secondItem="iuV-of-Atn" secondAttribute="bottom" constant="5" id="5LV-JN-ZT0"/>
+                    <constraint firstItem="iuV-of-Atn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="5vj-rp-suZ"/>
+                    <constraint firstItem="iuV-of-Atn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="B6W-TR-z2S"/>
+                    <constraint firstItem="6RT-oK-ixa" firstAttribute="centerY" secondItem="iuV-of-Atn" secondAttribute="centerY" id="EJn-I2-AZs"/>
+                    <constraint firstItem="6RT-oK-ixa" firstAttribute="leading" secondItem="iuV-of-Atn" secondAttribute="trailing" constant="10" id="NFk-LO-K1R"/>
+                    <constraint firstAttribute="trailing" secondItem="6RT-oK-ixa" secondAttribute="trailing" id="VLJ-5f-W8T"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buttonSubmit" destination="6RT-oK-ixa" id="BKd-Ey-PwR"/>
+                <outlet property="textFieldSearch" destination="iuV-of-Atn" id="cFF-OR-ITi"/>
+            </connections>
+            <point key="canvasLocation" x="197.70992366412213" y="28.87323943661972"/>
+        </tableViewCell>
+    </objects>
+</document>
