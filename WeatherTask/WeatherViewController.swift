@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 import Toast
 
-class ViewController: UIViewController {
+class WeatherViewController: UIViewController {
 
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
@@ -22,19 +22,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var iconContainerView: UIView!
 
     // MARK: - Properties
-    var viewModel: ViewControllerViewModel!
+    var viewModel: WeatherViewControllerViewModel!
     let refreshControl = UIRefreshControl()
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = ViewControllerViewModel(controller: self)
+        viewModel = WeatherViewControllerViewModel(controller: self)
         setupUI()
     }
 }
 
 // MARK: - UI Setup
-extension ViewController {
+extension WeatherViewController {
 
     func setupUI() {
         configureNavigationBar()
@@ -98,7 +98,7 @@ extension ViewController {
 }
 
 // MARK: - UITableViewDataSource
-extension ViewController: UITableViewDataSource {
+extension WeatherViewController: UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
@@ -152,7 +152,7 @@ extension ViewController: UITableViewDataSource {
 }
 
 // MARK: - UITableViewDelegate
-extension ViewController: UITableViewDelegate {
+extension WeatherViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return .leastNormalMagnitude

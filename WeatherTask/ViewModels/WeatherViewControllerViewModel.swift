@@ -8,11 +8,11 @@
 import Foundation
 
 
-class ViewControllerViewModel{
+class WeatherViewControllerViewModel{
     
     var allCities : [City]!
     
-    var controller : ViewController!
+    var controller : WeatherViewController!
     
     var filteredCities : [City] = []{
         didSet{
@@ -30,7 +30,7 @@ class ViewControllerViewModel{
         }
     }
     
-    init(controller : ViewController) {
+    init(controller : WeatherViewController) {
         allCities = APIManager.shared.loadCities()
         self.controller = controller
     }
