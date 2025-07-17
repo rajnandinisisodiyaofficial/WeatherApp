@@ -1,6 +1,8 @@
 # 🌤️ Weather App — iOS Developer Assessment Task
 
- [Click here to watch the demo](/Simulator Screen Recording - iPhone 16 Pro - 2025-07-16 at 21.51.00.mp4)
+ [Click here to watch the demo](## 📽️ Demo Video
+
+[▶️ Click here to watch the demo video](https://github.com/rajnandinisisodiyaofficial/WeatherApp/blob/main/Simulator%20Screen%20Recording%20-%20iPhone%2016%20Pro%20-%202025-07-16%20at%2021.51.00.mp4)
 
 This is a simple Weather App built using **Swift**, **UIKit**, and **MVVM architecture**. The app allows users to search for any city and fetch the current weather details using the **OpenWeatherMap API**.
 
